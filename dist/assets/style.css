@@ -1,0 +1,60 @@
+/* @package     poulycroc/static-builder @author      PoulyCroc <studio.poulycroc@freecaster.com> @copyright   MIT */
+/* VARIABLES all helpers tools */
+/* Your colors here */
+/* TOOLS all helpers tools */
+/* (TEXT) PARAMS ================= 1. Namespace 2. Intensity 3. Text color 4. Background color (flat) 5. Highlight #1 color 6. Highlight #2 color 7. Width (px) 8. Height (px) */
+/* $type String, 'color', 'height'... */
+/* CONFIG helpers based on the skin configuration */
+* { padding: 0; margin: 0; border: none; outline: none; box-sizing: border-box; }
+
+ul li, ol li { list-style: none; }
+
+html, body, #__nuxt, #__layout { height: 100%; }
+
+body { color: #303133; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body.has_banner_promo_event { margin-top: 200px; }
+
+@media only screen and (max-width: 800px) { body.has_banner_promo_event { margin-top: 85px; } }
+
+*.is-in-middle { position: absolute; top: 50%; right: 0; bottom: auto; left: 0; width: 100%; height: auto; transform: translateY(-50%); margin: auto; }
+
+.clearfix { clear: both; zoom: 1; }
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+
+.clearfix:after { clear: both; line-height: 0; visibility: hidden; }
+
+.full_w { width: 100%; }
+
+.pull_start { float: left; }
+
+.pull_end { float: right; }
+
+.push_b_20 { margin-bottom: 20px; }
+
+.push_b_40 { margin-bottom: 40px; }
+
+.push_t_20 { margin-top: 20px; }
+
+.push_t_40 { margin-top: 40px; }
+
+._bg_primary { background-color: #00caff; }
+
+._bg_success { background-color: #2eec91; }
+
+._bg_danger { background-color: #f56c6c; }
+
+._bg_warning { background-color: #efa200; }
+
+._bg_primary_d { background-color: #7200e3; }
+
+._bg__smooth_primary { background-color: rgba(0, 202, 255, 0.2); }
+
+._bg__smooth_success { background-color: rgba(46, 236, 145, 0.2); }
+
+._bg__smooth_danger { background-color: rgba(245, 108, 108, 0.2); }
+
+._bg__smooth_warning { background-color: rgba(239, 162, 0, 0.2); }
+
+._bg__smooth_primary_d { background-color: rgba(114, 0, 227, 0.2); }

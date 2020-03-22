@@ -1,0 +1,40 @@
+//  Author: Maxime Bartier
+//  github: https://github.com/Poulycroc
+//
+//  Licensed under a MIT License
+
+@function color($color-name, $color-variant: null) {
+  @if ($color-variant != null) {
+    @return map-get(map-get($colors, $color-name), $color-variant);
+  } @else {
+    @return map-get($colors, $color-name);
+  }
+}
+
+@function z($key) {
+  @if map-has-key($z-layers, $key) {
+    @return map-get($z-layers, $key);
+  }
+  @warn "Unknown `#{$key}` in $z-layers.";
+  @return null;
+}
+
+@function s($size-name, $size-variant: null) {
+  @if ($size-variant != null) {
+    @return map-get(map-get($s, $size-name), $size-variant);
+  } @else {
+    @return map-get($s, $size-name);
+  }
+}
+
+@function mq($size-name, $size-variant: null) {
+  @if ($size-variant != null) {
+    @return map-get(map-get($mq, $size-name), $size-variant);
+  } @else {
+    @return map-get($mq, $size-name);
+  }
+}
+
+@function strip-units($number: 0) {
+  @return $number / ($number * 0 + 1);
+}

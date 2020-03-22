@@ -1,0 +1,31 @@
+$s: (
+	grid: 1200px,
+	height: 40px,
+	mobileMarg: 8pt,
+	marg: 20px,
+	labelPadding: 10px,
+	padding: 15px,
+	smallPad: 7px,
+	layout_marg: 80px,
+	col_marg: 5px,
+	border: 1px,
+	radius: 10px,
+	smallradius: 5px,
+	iconText: 30px,
+	circleBtn: 30px,
+	tiny_wrap: 600px,
+	first_section_upper: 80px,
+	navH: 60px,
+	icon: (
+		tiny: 20px,
+		default: 24px,
+		bold: 30px,
+		big: 34px
+	)
+);
+
+$mq: (
+  modil: 600,
+  small: 900,
+  medium: 1250
+);

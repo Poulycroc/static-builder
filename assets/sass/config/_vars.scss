@@ -1,0 +1,29 @@
+$z-layers: (
+  nav: 10000,
+  header: 10,
+  overlay: 5000,
+  aside: 4500,
+  modal: 6000,
+  popper: 10000
+);
+
+$baseHeight: 57px;
+$typoHeight: 17px;
+$bezier: all .3s cubic-bezier(.645,.045,.355,1);
+$navSize: 60;
+$ms: 200ms;
+$liHover: 0.05;
+$borderRadius: 4px;
+$borderColor: color(border);
+$border: 1px solid $borderColor;
+$smallHeight: 40px;
+
+@mixin boxshadow($color) {
+  box-shadow: 0 12px 40px -12px rgba($color, .3);
+}
+
+@mixin mobile {
+  @include max-screen(450px) {
+    @content;
+  }
+}

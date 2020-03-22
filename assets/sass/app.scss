@@ -1,0 +1,30 @@
+/*
+ * @package     poulycroc/static-builder
+ * @author      PoulyCroc <studio.poulycroc@freecaster.com>
+ * @copyright   MIT
+ */
+
+/*
+ * VARIABLES
+ * all helpers tools
+ */
+@import 'config/colors';
+@import 'config/sizes';
+@import 'config/vars';
+
+/*
+ * TOOLS
+ * all helpers tools
+ */
+@import "~sass-tools/tools/mixins";
+@import "~sass-tools/tools/media-queries";
+@import "~sass-tools/tools/rfs";
+@import "~sass-tools/tools/functions";
+
+/*
+ * CONFIG
+ * helpers based on the skin configuration
+ */
+@import 'config/reset';
+@import 'config/base';
+ 
